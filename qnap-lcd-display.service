@@ -1,0 +1,11 @@
+[Unit]
+Description=QNAP LCD Display
+Documentation=https://github.com/Radiicall/qnap-display
+
+[Service]
+Type=simple
+ExecStart=/path/to/qnap-display/executable
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
